@@ -8,7 +8,6 @@ from mltu.configs import BaseModelConfigs
 from textblob import TextBlob
 from mltu.transformers import ImageResizer
 from flask import Flask,request
-import tensorflow as tf
 
 class ImageToWordModel(OnnxInferenceModel):
     def __init__(self, char_list: typing.Union[str, list], *args, **kwargs):
